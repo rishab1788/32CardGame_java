@@ -1,3 +1,11 @@
 public class Card {
-    int a[] = {0,1, 2, 3, 4, 5, 6, 7 };
+    int cardValue;
+
+    public int getCardValue() {
+        return cardValue;
+    }
+
+    public void setCardValue(int cardValue) {
+        this.cardValue = cardValue;
+    }
 }
