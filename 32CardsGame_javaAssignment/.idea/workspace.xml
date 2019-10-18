@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fd83b95-4e0c-429e-9bd7-b18928fbe177" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ElevatorSystem/ElevatorSystem.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyMultithread/MyMultithread.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../My_GFG/My_GFG.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../N_Thread_M_Numbers/N_Thread_M_Numbers.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mavendemo/mavendemo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../p1/p1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Players.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Players.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/players.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
