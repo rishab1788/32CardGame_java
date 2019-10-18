@@ -12,33 +12,61 @@ public class Main implements Runnable {
         for (int i = 0; i < 4; i++) {
             players[i] = new Players();
         }
+        distributeCardsPlayersPile();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         Main hand = new Main();
 
-        Thread m = new Thread(hand);
+        Thread t1 = new Thread(hand);
+        t1.setName("1");
+        Thread t2 = new Thread(hand);
+        t2.setName("2");
+        Thread t3 = new Thread(hand);
+        t3.setName("3");
+        Thread t4 = new Thread(hand);
+        t4.setName("4");
 
-        m.start();
+        t1.start();
+        Thread.sleep(10);
+        t2.start();
+        Thread.sleep(10);
+        t3.start();
+        Thread.sleep(10);
+        t4.start();
 
 
     }
 
     @Override
     public void run() {
-        System.out.print("hiiii");
+
+        int playerNumber = Integer.parseInt(Thread.currentThread().getName());
+        try {
+            players[playerNumber - 1].playerWork(piles, playerNumber - 1);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
     }
 
     public void distributeCardsPlayersPile() {
+        int temp = 0;
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
-                players[i].cards.add(d.card[j]);
+                players[i].cards.add(d.card[temp]);
+                System.out.println("player" + i + " = " + d.card[temp].getCardValue());
+                temp++;
             }
             for (int j = 4; j < 8; j++) {
-                piles[i].cards.add(d.card[j]);
+                piles[i].cards.add(d.card[temp]);
+                System.out.println("pile" + i + " = " + d.card[temp].getCardValue());
+                temp++;
             }
         }
 
     }
+
+
 }

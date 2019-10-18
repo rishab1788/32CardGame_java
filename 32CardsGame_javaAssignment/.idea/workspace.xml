@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8fd83b95-4e0c-429e-9bd7-b18928fbe177" name="Default Changelist" comment="" />
+    <list default="true" id="8fd83b95-4e0c-429e-9bd7-b18928fbe177" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ElevatorSystem/ElevatorSystem.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyMultithread/MyMultithread.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_GFG/My_GFG.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../N_Thread_M_Numbers/N_Thread_M_Numbers.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mavendemo/mavendemo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../p1/p1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Deck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Players.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Players.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/players.java" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +31,17 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1SK2k90rEx01adHVyiQJsh24e5F" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -65,5 +88,16 @@
       <updated>1571298106278</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

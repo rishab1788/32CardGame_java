@@ -19,7 +19,6 @@ public class Deck {
             for (int j = 0; j < s[i].length(); j++) {
                 int value = s[i].charAt(j) - '0';
                 card[index].setCardValue(value);
-                System.out.println(card[index].getCardValue());
                 index++;
             }
         }
