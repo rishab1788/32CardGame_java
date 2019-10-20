@@ -55,7 +55,8 @@ class LeastOccrance {
 
         }
         System.out.println(minOccuranceValue);
-
+        cards.remove(new Cardss(minOccuranceValue));
+        System.out.println(cards.size());
         /*
 
 
