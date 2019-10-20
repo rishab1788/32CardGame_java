@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8fd83b95-4e0c-429e-9bd7-b18928fbe177" name="Default Changelist" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/CardsLibrary/LeastOccrance.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="8fd83b95-4e0c-429e-9bd7-b18928fbe177" name="Default Changelist" comment="Default Changelist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/Card.class" afterPath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/Card.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/CardsArrangement.class" afterPath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/CardsArrangement.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/Deck.class" afterPath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/Deck.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/FileOperation.class" afterPath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/FileOperation.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/META-INF/32CardsGame_javaAssignment.kotlin_module" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/Main.class" afterPath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/Main.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/Pile.class" afterPath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/Pile.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/Players.class" afterPath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/Players.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/CardsLibrary/LeastOccrance.class" afterPath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/CardsLibrary/LeastOccrance.class" />
+      <change beforePath="$PROJECT_DIR$/src/CardsLibrary/LeastOccrance.java" afterPath="$PROJECT_DIR$/src/CardsLibrary/LeastOccrance.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LeastOccrance.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LeastOccrance.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CardsLibrary/LeastOccrance.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="48" column="16" lean-forward="false" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+            <state relative-caret-position="119">
+              <caret line="38" column="8" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
               <folding>
                 <element signature="e#93#94#0" expanded="true" />
                 <element signature="e#123#124#0" expanded="true" />
@@ -62,7 +53,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Solution.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Solution.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CardsLibrary/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
@@ -93,12 +84,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/CardsLibrary/LeastOccurance.java" />
-        <option value="$PROJECT_DIR$/src/CardsLibrary/LeastOccrance.java" />
         <option value="$PROJECT_DIR$/src/CardsLibrary/Solution.java" />
+        <option value="$PROJECT_DIR$/src/CardsLibrary/LeastOccrance.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="60" />
     <option name="y" value="30" />
     <option name="width" value="1251" />
@@ -253,18 +244,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="60" y="30" width="1251" height="745" extended-state="1" />
-    <editor active="true" />
+    <frame x="60" y="30" width="1251" height="745" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3496732" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3496732" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -305,6 +295,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Default Changelist" />
+    <option name="LAST_COMMIT_MESSAGE" value="Default Changelist" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -326,24 +320,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/CardsLibrary/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/CardsLibrary/LeastOccrance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="48" column="16" lean-forward="false" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+        <state relative-caret-position="119">
+          <caret line="38" column="8" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
           <folding>
             <element signature="e#93#94#0" expanded="true" />
             <element signature="e#123#124#0" expanded="true" />
             <element signature="e#420#421#0" expanded="true" />
             <element signature="e#453#454#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CardsLibrary/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>

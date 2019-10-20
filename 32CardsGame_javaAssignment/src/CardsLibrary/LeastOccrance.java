@@ -29,27 +29,34 @@ class Cardss {
 
 class LeastOccrance {
     public static void main(String[] args) {
-
         ArrayList<Cardss> cards = new ArrayList();
-        cards.add(new Cardss(3));
+        cards.add(new Cardss(4));
         cards.add(new Cardss(3));
         cards.add(new Cardss(1));
-        cards.add(new Cardss(2));
         cards.add(new Cardss(1));
+        cards.add(new Cardss(4));
         Scanner s = new Scanner(System.in);
         HashMap<Cardss, Integer> hm = new HashMap();
         for (int i = 0; i < cards.size(); i++) {
             if (hm.containsKey(cards.get(i))) {
                 hm.put(cards.get(i), hm.get(cards.get(i)) + 1);
             } else {
-                hm.put(cards.get(i), 0);
+                hm.put(cards.get(i), 1);
             }
         }
-        Iterator it = hm.keySet().iterator();
-        while (it.hasNext()) {
-            System.out.print(((Cardss) it.next()).value);
+        int minOccurance = 10;
+        int minOccuranceValue = 0;
+        for (Map.Entry<Cardss, Integer> entry : hm.entrySet()) {
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+            if (entry.getValue() < minOccurance) {
+                minOccurance = entry.getValue();
+                minOccuranceValue = entry.getKey().value;
+            }
+
         }
-/*
+        System.out.println(minOccuranceValue);
+
+        /*
 
 
         HashSet<Cardss> ht = new HashSet();
