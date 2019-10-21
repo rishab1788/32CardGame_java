@@ -29,11 +29,11 @@ public class Main implements Runnable {
         t4.setName("4");
 
         t1.start();
-        Thread.sleep(10);
+        Thread.sleep(100);
         t2.start();
-        Thread.sleep(10);
+        Thread.sleep(100);
         t3.start();
-        Thread.sleep(10);
+        Thread.sleep(100);
         t4.start();
 
 

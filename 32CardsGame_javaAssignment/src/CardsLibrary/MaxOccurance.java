@@ -1,36 +1,14 @@
 package CardsLibrary;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
 
-class Cardss {
-    int value;
 
-    Cardss(int v) {
-        this.value = v;
-    }
+public class MaxOccurance {
 
-    @Override
-    public boolean equals(Object object) {
-        boolean isEqual = false;
-
-        if (object != null && object instanceof Cardss) {
-            isEqual = (this.value == ((Cardss) object).value);
-        }
-
-        return isEqual;
-    }
-
-    @Override
-    public int hashCode() {
-        return this.value;
-    }
-
-}
-
-class LeastOccrance {
-
-    public void findLeastOccurance(ArrayList <Cardss>cards)
-    {
+    public static boolean findMaxOccurance(ArrayList<Cardss> cards) {
         HashMap<Cardss, Integer> hm = new HashMap();
         for (int i = 0; i < cards.size(); i++) {
             if (hm.containsKey(cards.get(i))) {
@@ -39,30 +17,36 @@ class LeastOccrance {
                 hm.put(cards.get(i), 1);
             }
         }
-        int minOccurance = 10;
-        int minOccuranceValue = 0;
+        int maxOccurance = 0;
+        int maxOccuranceValue = 0;
         for (Map.Entry<Cardss, Integer> entry : hm.entrySet()) {
             System.out.println(entry.getKey() + " : " + entry.getValue());
-            if (entry.getValue() < minOccurance) {
-                minOccurance = entry.getValue();
-                minOccuranceValue = entry.getKey().value;
+            if (entry.getValue() > maxOccurance) {
+                maxOccurance = entry.getValue();
+                maxOccuranceValue = entry.getKey().value;
             }
-
         }
-        System.out.println(minOccuranceValue);
-        cards.remove(new Cardss(minOccuranceValue));
-        System.out.println(cards.size());
+        System.out.println(maxOccurance);
+        if (maxOccurance == 4) {
+            return true;
+        } else {
+            return false;
+        }
+
 
     }
+
 
     public static void main(String[] args) {
         ArrayList<Cardss> cards = new ArrayList();
         cards.add(new Cardss(4));
-        cards.add(new Cardss(3));
-        cards.add(new Cardss(1));
+        cards.add(new Cardss(4));
         cards.add(new Cardss(1));
         cards.add(new Cardss(4));
+        cards.add(new Cardss(4));
         Scanner s = new Scanner(System.in);
+        System.out.println(findMaxOccurance(cards));
+
         /*
 
 
