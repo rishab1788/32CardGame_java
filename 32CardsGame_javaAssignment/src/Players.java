@@ -23,7 +23,7 @@ public class Players {
                 Card withDrawCard = playerCardToWithDraw();
                 printPlayerCard(playerNumber);
                 addCardToPile(p, playerNumber, withDrawCard);
-                wait(1000);
+                wait(3000);
             }
             if (winner != -1) {
                 System.out.println("Player " + playerNumber + "GoodBye Congrats To Player-" + winner);

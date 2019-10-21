@@ -2,24 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fd83b95-4e0c-429e-9bd7-b18928fbe177" name="Default Changelist" comment="Default Changelist madskl">
-      <change afterPath="$PROJECT_DIR$/src/CardsLibrary/MaxOccurance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameFile" beforeDir="false" afterPath="$PROJECT_DIR$/GameFile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/Card.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/Card.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/CardsArrangement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/CardsArrangement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/CardsLibrary/Cardss.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/CardsLibrary/Cardss.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/CardsLibrary/LeastOccrance.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/CardsLibrary/LeastOccrance.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/Deck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/Deck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/FileOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/FileOperation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/Pile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/Pile.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/Players.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/32CardsGame_javaAssignment/Players.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CardsLibrary/LeastOccrance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CardsLibrary/LeastOccrance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Players.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Players.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../My_GFG/src/LeastOccrance.java" beforeDir="false" afterPath="$PROJECT_DIR$/../My_GFG/src/LeastOccrance.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,20 +27,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="60" />
-    <option name="y" value="30" />
-    <option name="width" value="1251" />
-    <option name="height" value="745" />
-  </component>
   <component name="ProjectId" id="1SK2k90rEx01adHVyiQJsh24e5F" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
