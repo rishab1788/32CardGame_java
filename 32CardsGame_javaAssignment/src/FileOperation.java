@@ -14,8 +14,7 @@ public class FileOperation {
             objReader = new BufferedReader(new FileReader("GameFile"));
 
             while ((strCurrentLine = objReader.readLine()) != null) {
-                line.append(strCurrentLine+'\n');
-
+                line.append(strCurrentLine + '\n');
             }
 
         } catch (IOException e) {

@@ -5,31 +5,34 @@ import java.util.Map;
 public class Players {
 
     static int winner = -1;
+    static int time = 10;
     ArrayList<Card> cards = new <Card>ArrayList(4);
 
-    public void playerWork(Pile p[], int playerNumber) throws InterruptedException {
-        synchronized (this) {
-            while (winner == -1) {
-                System.out.println("----------------------------");
-                printPlayerCard(playerNumber);
-                Card c = withDrawCardFromPile(p, playerNumber);
-                addPileCardToPlayer(c);
-                printPlayerCard(playerNumber);
-                if (isPlayerWin() == true) {
-                    System.out.println("player " + playerNumber + "Won The Match");
-                    winner = playerNumber;
-                    return;
-                }
-                Card withDrawCard = playerCardToWithDraw();
-                printPlayerCard(playerNumber);
-                addCardToPile(p, playerNumber, withDrawCard);
-                wait(3000);
+    public synchronized void playerWork(Pile p[], int playerNumber) throws InterruptedException {
+        while (winner == -1) {
+            System.out.println(Thread.currentThread().getName() + ".......");
+            System.out.println("----------------------------");
+            printPlayerCard(playerNumber);
+            Card c = withDrawCardFromPile(p, playerNumber);
+            addPileCardToPlayer(c);
+            printPlayerCard(playerNumber);
+            if (isPlayerWin() == true) {
+                System.out.println("player " + playerNumber + "Won The Match");
+                winner = playerNumber;
+                return;
             }
-            if (winner != -1) {
-                System.out.println("Player " + playerNumber + "GoodBye Congrats To Player-" + winner);
-            }
+            Card withDrawCard = playerCardToWithDraw();
+            printPlayerCard(playerNumber);
+            addCardToPile(p, playerNumber, withDrawCard);
+
+            wait(2000);
         }
+        if (winner != -1) {
+            System.out.println("Player " + playerNumber + "GoodBye Congrats To Player-" + winner);
+        }
+
     }
+
 
     private boolean isPlayerWin() {
         HashMap<Card, Integer> hm = new HashMap();
@@ -49,6 +52,7 @@ public class Players {
             }
 
         }
+
         System.out.println("Max Occurance-" + maxOccurance);
         if (maxOccurance == 4) {
             return true;
@@ -96,7 +100,7 @@ public class Players {
     }
 
     private void printPlayerCard(int playerNumber) throws InterruptedException {
-        System.out.print("Player number cards" + playerNumber + "-");
+        System.out.print("Player number " + playerNumber + " cards-");
         for (int i = 0; i < cards.size(); i++) {
             System.out.print(cards.get(i).cardValue + ",");
         }

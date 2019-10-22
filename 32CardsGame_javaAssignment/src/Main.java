@@ -45,6 +45,8 @@ public class Main implements Runnable {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
+
     }
 
     public void distributeCardsPlayersPile() {
