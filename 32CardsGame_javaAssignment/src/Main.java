@@ -1,3 +1,5 @@
+import static java.lang.Thread.sleep;
+
 public class Main implements Runnable {
     Players players[] = new Players[4];
     Pile piles[] = new Pile[4];
@@ -18,7 +20,6 @@ public class Main implements Runnable {
     public static void main(String[] args) throws InterruptedException {
 
         Main hand = new Main();
-
         Thread t1 = new Thread(hand);
         t1.setName("1");
         Thread t2 = new Thread(hand);
@@ -29,17 +30,20 @@ public class Main implements Runnable {
         t4.setName("4");
 
         t1.start();
-        Thread.sleep(100);
+        sleep(500);
         t2.start();
-        Thread.sleep(100);
+        sleep(500);
         t3.start();
-        Thread.sleep(100);
+        sleep(500);
         t4.start();
+
     }
 
     @Override
     public void run() {
+
         int playerNumber = Integer.parseInt(Thread.currentThread().getName());
+
         try {
             players[playerNumber - 1].playerWork(piles, playerNumber - 1);
         } catch (InterruptedException e) {

@@ -1,17 +1,18 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
+
+import static java.lang.Thread.sleep;
 
 public class Players {
-
     static int winner = -1;
     static int time = 10;
     ArrayList<Card> cards = new <Card>ArrayList(4);
 
     public synchronized void playerWork(Pile p[], int playerNumber) throws InterruptedException {
         while (winner == -1) {
-            System.out.println(Thread.currentThread().getName() + ".......");
-            System.out.println("----------------------------");
+            System.out.println("-----------------------------------------");
             printPlayerCard(playerNumber);
             Card c = withDrawCardFromPile(p, playerNumber);
             addPileCardToPlayer(c);
@@ -24,17 +25,18 @@ public class Players {
             Card withDrawCard = playerCardToWithDraw();
             printPlayerCard(playerNumber);
             addCardToPile(p, playerNumber, withDrawCard);
-
-            wait(2000);
+            Thread.sleep(time+1000);
+            wait(2000  );
+            time = time + 200;
         }
+
         if (winner != -1) {
             System.out.println("Player " + playerNumber + "GoodBye Congrats To Player-" + winner);
         }
-
     }
 
 
-    private boolean isPlayerWin() {
+    private boolean isPlayerWin() throws InterruptedException {
         HashMap<Card, Integer> hm = new HashMap();
         for (int i = 0; i < cards.size(); i++) {
             if (hm.containsKey(cards.get(i))) {
@@ -49,6 +51,7 @@ public class Players {
             if (entry.getValue() > maxOccurance) {
                 maxOccurance = entry.getValue();
                 maxOccuranceValue = entry.getKey().cardValue;
+
             }
 
         }
@@ -78,6 +81,7 @@ public class Players {
             if (entry.getValue() < minOccurance) {
                 minOccurance = entry.getValue();
                 minOccuranceValue = entry.getKey().cardValue;
+
             }
 
         }

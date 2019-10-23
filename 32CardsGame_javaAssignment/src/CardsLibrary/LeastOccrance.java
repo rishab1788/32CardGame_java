@@ -29,7 +29,7 @@ class Cardss {
 
 class LeastOccrance {
 
-    public void findLeastOccurance(ArrayList <Cardss>cards)
+    public static void findLeastOccurance(ArrayList<Cardss> cards)
     {
         HashMap<Cardss, Integer> hm = new HashMap();
         for (int i = 0; i < cards.size(); i++) {
@@ -60,9 +60,10 @@ class LeastOccrance {
         cards.add(new Cardss(4));
         cards.add(new Cardss(3));
         cards.add(new Cardss(1));
-        cards.add(new Cardss(1));
+        cards.add(new Cardss(2));
         cards.add(new Cardss(4));
         Scanner s = new Scanner(System.in);
+        findLeastOccurance(cards);
         /*
 
 
