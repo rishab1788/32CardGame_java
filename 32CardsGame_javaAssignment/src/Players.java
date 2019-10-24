@@ -26,15 +26,23 @@ public class Players implements Runnable {
     @Override
     public synchronized void run() {
         while (winner == -1) {
-            while (turn!=)
+            int playerNumber = Integer.parseInt(Thread.currentThread().getName());
+            playerNumber = playerNumber - 1;
+
+            while (turn != playerNumber) {
                 try {
-                    Thread.sleep(1000);
+                    wait();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
+            }
+
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             System.out.println(Thread.currentThread().getName());
-            int playerNumber = Integer.parseInt(Thread.currentThread().getName());
-            playerNumber = playerNumber - 1;
             printPlayerCard(playerNumber);
             Card withDrawnCardFromPile = withDrawCardFromPile(playerNumber);
             addPileCardToPlayer(playerNumber, withDrawnCardFromPile);
@@ -47,11 +55,9 @@ public class Players implements Runnable {
             Card withDrawnCardFromPlayer = playerCardToWithDraw(playerNumber);
             addCardToNextPile(playerNumber, withDrawnCardFromPlayer);
             printPlayerCard(playerNumber);
-            try {
-                wait(2000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+            turn++;
+            turn = turn % 4;
+            notifyAll();
         }
         if (winner != -1) {
             System.out.println("Player " + "GoodBye Congrats To Player-" + winner);
