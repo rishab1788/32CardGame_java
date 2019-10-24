@@ -28,7 +28,7 @@ public class Players implements Runnable {
         while (winner == -1) {
             int playerNumber = Integer.parseInt(Thread.currentThread().getName());
             playerNumber = playerNumber - 1;
-
+            System.out.print(playerNumber);
             while (turn != playerNumber) {
                 try {
                     wait();
@@ -37,11 +37,11 @@ public class Players implements Runnable {
                 }
             }
 
-            try {
+           /* try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
-            }
+            }*/
             System.out.println(Thread.currentThread().getName());
             printPlayerCard(playerNumber);
             Card withDrawnCardFromPile = withDrawCardFromPile(playerNumber);
@@ -50,18 +50,23 @@ public class Players implements Runnable {
             if (isPlayerWon(playerNumber) == true) {
                 System.out.println("player " + playerNumber + "Won The Match");
                 winner = playerNumber;
-                return;
+                notifyAll();
+                break;
+            } else {
+                Card withDrawnCardFromPlayer = playerCardToWithDraw(playerNumber);
+                addCardToNextPile(playerNumber, withDrawnCardFromPlayer);
+                printPlayerCard(playerNumber);
+                turn++;
+                turn = turn % 4;
             }
-            Card withDrawnCardFromPlayer = playerCardToWithDraw(playerNumber);
-            addCardToNextPile(playerNumber, withDrawnCardFromPlayer);
-            printPlayerCard(playerNumber);
-            turn++;
-            turn = turn % 4;
             notifyAll();
+
         }
+        System.out.print("BYE");
         if (winner != -1) {
             System.out.println("Player " + "GoodBye Congrats To Player-" + winner);
         }
+
     }
 
     private void addCardToNextPile(int playerNumber, Card card) {
