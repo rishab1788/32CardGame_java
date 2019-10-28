@@ -28,20 +28,16 @@ public class Players implements Runnable {
         while (winner == -1) {
             int playerNumber = Integer.parseInt(Thread.currentThread().getName());
             playerNumber = playerNumber - 1;
-            System.out.print(playerNumber);
             while (turn != playerNumber) {
+                if (winner != -1) {
+                    System.out.println("Bye TO EveryOne "+ playerNumber + " Congrates to " + winner);
+                }
                 try {
                     wait();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             }
-
-           /* try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }*/
             System.out.println(Thread.currentThread().getName());
             printPlayerCard(playerNumber);
             Card withDrawnCardFromPile = withDrawCardFromPile(playerNumber);
@@ -49,7 +45,9 @@ public class Players implements Runnable {
             printPlayerCard(playerNumber);
             if (isPlayerWon(playerNumber) == true) {
                 System.out.println("player " + playerNumber + "Won The Match");
+
                 winner = playerNumber;
+
                 notifyAll();
                 break;
             } else {
@@ -60,9 +58,9 @@ public class Players implements Runnable {
                 turn = turn % 4;
             }
             notifyAll();
-
         }
-        System.out.print("BYE");
+
+        System.out.print("BYE..");
         if (winner != -1) {
             System.out.println("Player " + "GoodBye Congrats To Player-" + winner);
         }
@@ -110,7 +108,6 @@ public class Players implements Runnable {
             }
 
         }
-
         System.out.println("Max Occurance-" + maxOccurance);
         if (maxOccurance == 4) {
             return true;
@@ -144,7 +141,6 @@ public class Players implements Runnable {
                 }
             }
         }
-
         cardsListOfPlayers[playerNumber].remove(new Card(minOccuranceValue));
         System.out.println("CardsWithDrawn-" + minOccuranceValue);
         return new Card(minOccuranceValue);

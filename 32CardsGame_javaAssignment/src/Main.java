@@ -4,7 +4,7 @@ import java.util.concurrent.CountDownLatch;
 
 import static java.lang.Thread.sleep;
 
-public class Main implements Runnable {
+public class Main {
 
     Deck d = new Deck();
 
@@ -14,7 +14,6 @@ public class Main implements Runnable {
     }
 
     public static void main(String[] args) throws InterruptedException {
-
         Main hand = new Main();
         Players player = new Players();
         System.out.print(player);
@@ -34,19 +33,6 @@ public class Main implements Runnable {
         t4.start();
     }
 
-    @Override
-    public void run() {
-
-     /*   int playerNumber = Integer.parseInt(Thread.currentThread().getName());
-
-        try {
-            players[playerNumber - 1].playerWork(piles, playerNumber - 1);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-*/
-
-    }
 
     public void distributeCardsPlayersPile(Players players) {
         int temp = 0;
